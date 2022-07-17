@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import Landing from "./components/Landing";
+import Header from "./components/Header";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import { motion } from "framer-motion"
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <motion.section 
+      initial={{x:-window.innerWidth}}
+      animate={{x:0}}
+      exit={{x:-window.innerWidth}}
+    transition={{type:"tween",duration:0.5}}
+    >    
+    <Header/>
+    <Landing />
+    <About />
+    <Contact />
+    </motion.section>
+
+  )    
 }
 
 export default App;
