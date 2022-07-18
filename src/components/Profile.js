@@ -1,42 +1,74 @@
 import Animation from "./Animation"
 import PageHeader from "./PageHeader"
+import { useState,useEffect } from "react";
 
 const Profile=()=>{
+
+    const [profile,setProfile]=useState([]);
+    const [qualification,setQualification]=useState([])
+  
+
+    useEffect(()=>{
+        const prof=JSON.parse(localStorage.getItem('Profile'))
+        if(prof)
+            setProfile(prof)
+        else
+            console.log("error")
+        const qua=JSON.parse(localStorage.getItem('Qualifications'))
+        if(qua)
+            setQualification(qua)
+    },[])
+
+   
+   
     return(
     <Animation>
         <PageHeader />
-        <div className="container-fluid page-top justify-content-center">
-            <h1 className="text-center mt-4">ACADEMIC QUALIFICATION</h1>
-            <table className="table table-striped table-sm mt-4">
-                <thead>
-                    <tr>
-                        <th>Qualification</th>
-                        <th>School/Institution</th>
+        <div className="container-fluid page-top text-left">
+            <h3 className="mt-4">PROFILE</h3>
+            <div className="row">
+            <div className="col-sm-12 col-md-6 col-lg-6">
+            <div className="row">
+                    <div className="col-sm12 ">
+                 {profile.map( (item,i) =>(
+                    <div key={i}>
+                   <p>Name: {item.name}</p>
+                       <p>Designation: {item.designation}</p>
+                    <p>Email: {item.email}</p> 
+                    </div>
+))}   
+                    </div>
+                </div>
+                <hr/>
+                <div className="row"></div>
+                <div className="col-sm12"></div>
+                <h5>Academic Qualifications</h5>
+                <table className="table">
+                    <thead>
+                        <tr>
+                        <th>Certificate</th>
+                        <th>School</th>
                         <th>Year</th>
-                        <th>Specialization</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Bach Engineering</td>
-                        <td>Universiti Kebangsaan Malaysia</td>
-                        <td>2000</td>
-                        <td>Civil Engineering (structure) </td>
-                    </tr>
-                    <tr>
-                        <td>Master of Engineering</td>
-                        <td>Universiti Kebangsaan Malaysia</td>
-                        <td>2003</td>
-                        <td>Environmental Engineering</td>
-                    </tr>
-                    <tr>
-                        <td>PhD</td>
-                        <td>Cardiff University</td>
-                        <td>2008</td>
-                        <td>Civil Engineering (Geo-envirenmental Engineering) </td>
-                    </tr>
-                </tbody>
-            </table>
+                        <th>Area of Specialization</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    {qualification.map( (list,i) =>(
+                        <tr key={i}>
+                            <td>{list.certificate}</td>
+                            <td>{list.school}</td>
+                            <td>{list.year}</td>
+                            <td>{list.area}</td>
+                        </tr>
+                    ))}
+                    </tbody>
+                </table>
+            </div>
+            <div className="col-sm-12 col-md-6 col-lg-6">
+                <img id="profile-img" src="/images/niknor.jpg" alt='profile picture'></img>
+            
+            </div>
+            </div>
         </div>
     </Animation>)
 }

@@ -56,16 +56,15 @@ const Supervisions=()=>{
     return(
     <Animation>
         <PageHeader />
-        <div className="container-fluid page-top text-left border">
+        <div className="container-fluid text-left page-top">
                 <h3 className="mt-4">SUPERVISIONS</h3>
                 <div className="row justify-content-md-center table-responsive">
             <div className="col-sm-12 col-md-8">
     <MDBDataTable
-      
-      bordered
-      small
-      data={data}
+      className='mdbtable'
+    data={data}
     />
+    
     </div></div>
         </div>
     
