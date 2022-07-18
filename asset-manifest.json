@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/niknorsyahariati.github.io/static/js/main.d048599a.js",
-    "index.html": "/niknorsyahariati.github.io/index.html",
-    "main.d048599a.js.map": "/niknorsyahariati.github.io/static/js/main.d048599a.js.map"
+    "main.js": "/niknor/static/js/main.3993aaec.js",
+    "index.html": "/niknor/index.html",
+    "main.3993aaec.js.map": "/niknor/static/js/main.3993aaec.js.map"
   },
   "entrypoints": [
-    "static/js/main.d048599a.js"
+    "static/js/main.3993aaec.js"
   ]
 }
