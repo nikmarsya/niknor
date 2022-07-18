@@ -13,7 +13,7 @@ const Contact=()=>{
             email:email.value,
             message:message.value
         }
-        fetch("http://localhost:5000/contact",{
+        fetch("server/contact",{
             method: "POST",
             headers: {
                 'Accept': 'application/json, text/plain, */*',
