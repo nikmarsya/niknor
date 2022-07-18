@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/niknor/static/js/main.5244070b.js",
+    "main.js": "/niknor/static/js/main.efd6d7a9.js",
     "index.html": "/niknor/index.html",
-    "main.5244070b.js.map": "/niknor/static/js/main.5244070b.js.map"
+    "main.efd6d7a9.js.map": "/niknor/static/js/main.efd6d7a9.js.map"
   },
   "entrypoints": [
-    "static/js/main.5244070b.js"
+    "static/js/main.efd6d7a9.js"
   ]
 }
