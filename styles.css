@@ -1,0 +1,135 @@
+
+body{
+    font-family:'Roboto',sans-serif;
+}
+.landing{
+    height:100vh;
+    background: url('images/mountain1.jpg');
+    background-size:cover;
+    position:relative;
+}
+.quotes{
+    border:2px solid black;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.divborder{
+    min-height:90vh;
+}
+.card{
+    height: 280px;
+    cursor: pointer;
+    border-radius: 50px 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.card-title{
+    text-align: center;
+    font-size:larger;
+}
+.card:hover{
+    color:royalblue;
+}
+.card > .card-body > a{
+    text-decoration: none;
+}
+.cardimage{
+    width: 260px;
+    height: 140px;
+    border-radius: 50px 20px 0 0;
+}
+#contact-form >label{
+    margin-bottom: 5px;
+    display: block;
+}
+#contact-form >input,#contact-form>textarea{
+    margin-bottom: 5px;
+    display: block;
+}
+textarea{
+    width:100%; height:200px;
+}
+.page-top{
+    position: absolute;
+    padding-top: 5%;
+}
+.sidebar{
+    background-color:gainsboro;
+    min-height: 100vh;
+    color:white;
+    display: none;
+}
+.sidebar>ul>li{
+    list-style-type:none;
+}
+.sidebar>ul>li>a{
+    text-decoration: none;
+    color:white;
+
+}
+
+.sidebar:target{
+    display: block;
+}
+.closebtn {
+    text-decoration: none;
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .closebtn:hover,
+  .closebtn:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+.text-left>h3{
+    text-align: left;
+    margin-left: 15%;
+}
+.card-bottom{
+    position: absolute;
+    bottom: 20px;
+}
+.uploadFile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.label,.file{ 
+    padding: 10px;
+
+}
+.instruction{
+    border:2px double royalblue;
+    
+}
+h2,h4{
+    text-align: center;
+}
+.navbar-color{
+    background-color: rgba(255,255,255);
+}
+.navbar-color ul li a{
+    font-weight: bold;
+}
+.box{
+    background-color: antiquewhite;
+    margin-top: 0;
+}
+#profile-img{
+    height: fit-content;
+}
+.mdbtable{
+    text-align: left;
+}
+
+tbody + thead{
+    display:none;
+}
