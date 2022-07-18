@@ -65,7 +65,7 @@ const Profile=()=>{
                 </table>
             </div>
             <div className="col-sm-12 col-md-6 col-lg-6">
-                <image id="profile-img" src="images/niknor.jpg" alt='niknor'></image>
+                <image id="profile-img" src={process.env.PUBLIC_URL +"/</div>images/niknor.jpg"} alt='niknor'></image>
             
             </div>
             </div>
