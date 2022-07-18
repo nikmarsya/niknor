@@ -2,6 +2,7 @@ import Animation from "./Animation"
 import PageHeader from "./PageHeader"
 import { useState,useEffect } from "react";
 
+
 const Profile=()=>{
 
     const [profile,setProfile]=useState([]);
@@ -65,7 +66,7 @@ const Profile=()=>{
                 </table>
             </div>
             <div className="col-sm-12 col-md-6 col-lg-6">
-                <img id="profile-img" src="/images/niknor.jpg" alt='niknor'></img>
+                <img id="profile-img" src="public/images/niknor.jpg" alt='niknor'></img>
             
             </div>
             </div>
